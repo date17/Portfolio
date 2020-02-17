@@ -1,0 +1,39 @@
+// header
+header {
+  padding: 70px 0;
+  border-bottom: 2px dashed gray;
+  .title {
+    .title-en {
+      color: yellow;
+      font-size: 4rem;
+      font-weight: bold;
+      text-align: center;
+    }
+    .title-ja {
+      margin: 10px 0;
+      text-align: center;
+      font-size: 1.5rem;
+      color: yellow;
+    }
+  }
+}
+
+// footer
+footer {
+  padding: 5px 0;
+  border-top: 2px dashed gray;
+  .github {
+    width: 5%;
+    font-size: 16pt;
+    margin: 10px auto;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: gray;
+    }
+  }
+  .copyright {
+    color: gray;
+    text-align: center;
+  }
+}

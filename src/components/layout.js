@@ -4,9 +4,9 @@ import Footer from "./footer";
 import "../static/sass/layout.scss";
 
 class Layout extends Component {
-  constructor(props) {
-    super(props);
-  }
+  // constructor(props) {
+  //   super(props);
+  // }
 
   render() {
     return (

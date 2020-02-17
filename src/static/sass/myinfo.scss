@@ -1,0 +1,107 @@
+.introduction {
+  padding: 30px 0;
+  .title {
+    padding: 20px 0;
+    text-align: center;
+    color: yellow;
+    .en {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .ja {
+      margin: 5px 0;
+      font-size: 1rem;
+    }
+  }
+  .info {
+    width: 70%;
+    margin: 40px 15%;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    display: flex;
+    .face-image {
+      width: 40%;
+      margin: 0 5%;
+      text-align: center;
+      font-size: 13rem;
+      padding: 149px 0;
+    }
+    .about {
+      width: 40%;
+      margin: 0 10% 0 0;
+      padding: 40px 0;
+      .name {
+        padding: 0.5rem 0;
+        .start-tag {
+          color: rgb(65, 223, 223);
+          font-size: 1.5rem;
+        }
+        .main {
+          margin: 0.3rem 0;
+          color: #fff;
+          font-size: 1.5rem;
+          padding: 0 0 0 4rem;
+          font-weight: bold;
+        }
+        .end-tag {
+          color: rgb(65, 223, 223);
+          font-size: 1.5rem;
+        }
+      }
+      .birth {
+        padding: 0.5rem 0;
+        .start-tag {
+          color: rgb(65, 223, 223);
+          font-size: 1.5rem;
+        }
+        .main {
+          margin: 0.3rem 0;
+          color: #fff;
+          font-size: 1.5rem;
+          padding: 0 0 0 4rem;
+          font-weight: bold;
+        }
+        .end-tag {
+          color: rgb(65, 223, 223);
+          font-size: 1.5rem;
+        }
+      }
+      .university {
+        padding: 0.5rem 0;
+        .start-tag {
+          color: rgb(65, 223, 223);
+          font-size: 1.5rem;
+        }
+        .main {
+          margin: 0.3rem 0;
+          color: #fff;
+          font-size: 1.5rem;
+          padding: 0 0 0 4rem;
+          font-weight: bold;
+        }
+        .end-tag {
+          color: rgb(65, 223, 223);
+          font-size: 1.5rem;
+        }
+      }
+      .hobby {
+        padding: 0.5rem 0;
+        .start-tag {
+          color: rgb(65, 223, 223);
+          font-size: 1.5rem;
+        }
+        .main {
+          margin: 0.3rem 0;
+          color: #fff;
+          font-size: 1.5rem;
+          padding: 0 0 0 4rem;
+          font-weight: bold;
+        }
+        .end-tag {
+          color: rgb(65, 223, 223);
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
