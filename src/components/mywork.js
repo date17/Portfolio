@@ -184,7 +184,13 @@ class MyWork extends Component {
                 <FontAwesomeIcon icon={["fas", "angle-right"]} />
               </div>
               <div className="main">
-                <a href={this.state.url}>{this.state.url}</a>
+                <a
+                  href={this.state.url}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  {this.state.url}
+                </a>
               </div>
               <div className="end-tag">
                 <FontAwesomeIcon icon={["fas", "angle-left"]} />

@@ -6,7 +6,11 @@ class Footer extends Component {
     return (
       <footer>
         <div className="github">
-          <a href="https://github.com/date17">
+          <a
+            href="https://github.com/date17"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             <FontAwesomeIcon icon={["fab", "github-square"]} />
           </a>
         </div>
