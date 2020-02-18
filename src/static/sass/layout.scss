@@ -24,16 +24,20 @@ footer {
   border-top: 2px dashed gray;
   .github {
     width: 5%;
-    font-size: 16pt;
+    font-size: 20pt;
     margin: 10px auto;
     text-align: center;
     a {
       text-decoration: none;
       color: gray;
+      &:hover {
+        color: rgb(230, 170, 115);
+      }
     }
   }
   .copyright {
     color: gray;
     text-align: center;
+    margin: 0 0 10px;
   }
 }

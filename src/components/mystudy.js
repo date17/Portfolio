@@ -13,14 +13,14 @@ class MyStudy extends Component {
         <div className="study-history">
           <div className="start-tag">
             <FontAwesomeIcon icon={["fas", "angle-left"]} />
-            ul<span>className="STUDY HISTORY"</span>
+            ul<span>DATE = "STUDY HISTORY"</span>
             <FontAwesomeIcon icon={["fas", "angle-right"]} />
           </div>
           <div className="history-list">
             <div className="one-history">
               <div className="start-list-tag">
                 <FontAwesomeIcon icon={["fas", "angle-left"]} />
-                li<span>className="2019-01"</span>
+                li<span>DATE = "2019-01"</span>
                 <FontAwesomeIcon icon={["fas", "angle-right"]} />
               </div>
               <div className="main">授業でJSPを用いたWEBページを作成</div>
@@ -33,7 +33,7 @@ class MyStudy extends Component {
             <div className="one-history">
               <div className="start-list-tag">
                 <FontAwesomeIcon icon={["fas", "angle-left"]} />
-                li<span>className="2019-02"</span>
+                li<span>DATE = "2019-02"</span>
                 <FontAwesomeIcon icon={["fas", "angle-right"]} />
               </div>
               <div className="main">C言語の復習</div>
@@ -46,7 +46,7 @@ class MyStudy extends Component {
             <div className="one-history">
               <div className="start-list-tag">
                 <FontAwesomeIcon icon={["fas", "angle-left"]} />
-                li<span>className="2019-05"</span>
+                li<span>DATE = "2019-05"</span>
                 <FontAwesomeIcon icon={["fas", "angle-right"]} />
               </div>
               <div className="main">独学でC#を学ぶ</div>
@@ -59,7 +59,7 @@ class MyStudy extends Component {
             <div className="one-history">
               <div className="start-list-tag">
                 <FontAwesomeIcon icon={["fas", "angle-left"]} />
-                li<span>className="2019-07"</span>
+                li<span>DATE = "2019-07"</span>
                 <FontAwesomeIcon icon={["fas", "angle-right"]} />
               </div>
               <div className="main">
@@ -74,7 +74,7 @@ class MyStudy extends Component {
             <div className="one-history">
               <div className="start-list-tag">
                 <FontAwesomeIcon icon={["fas", "angle-left"]} />
-                li<span>className="2019-08"</span>
+                li<span>DATE = "2019-08"</span>
                 <FontAwesomeIcon icon={["fas", "angle-right"]} />
               </div>
               <div className="main">画像処理ライブラリOpenCVの勉強</div>
@@ -87,7 +87,7 @@ class MyStudy extends Component {
             <div className="one-history">
               <div className="start-list-tag">
                 <FontAwesomeIcon icon={["fas", "angle-left"]} />
-                li<span>className="2019-09"</span>
+                li<span>DATE = "2019-09"</span>
                 <FontAwesomeIcon icon={["fas", "angle-right"]} />
               </div>
               <div className="main">独学でRubyの勉強</div>
@@ -100,7 +100,7 @@ class MyStudy extends Component {
             <div className="one-history">
               <div className="start-list-tag">
                 <FontAwesomeIcon icon={["fas", "angle-left"]} />
-                li<span>className="2019-10"</span>
+                li<span>DATE = "2019-10"</span>
                 <FontAwesomeIcon icon={["fas", "angle-right"]} />
               </div>
               <div className="main">Ruby on Railsを勉強</div>
@@ -113,7 +113,7 @@ class MyStudy extends Component {
             <div className="one-history">
               <div className="start-list-tag">
                 <FontAwesomeIcon icon={["fas", "angle-left"]} />
-                li<span>className="2019-11"</span>
+                li<span>DATE = "2019-11"</span>
                 <FontAwesomeIcon icon={["fas", "angle-right"]} />
               </div>
               <div className="main">
@@ -130,7 +130,7 @@ class MyStudy extends Component {
             <div className="one-history">
               <div className="start-list-tag">
                 <FontAwesomeIcon icon={["fas", "angle-left"]} />
-                li<span>className="2019-12"</span>
+                li<span>DATE = "2019-12"</span>
                 <FontAwesomeIcon icon={["fas", "angle-right"]} />
               </div>
               <div className="main">Laravelの勉強</div>
@@ -143,7 +143,7 @@ class MyStudy extends Component {
             <div className="one-history">
               <div className="start-list-tag">
                 <FontAwesomeIcon icon={["fas", "angle-left"]} />
-                li<span>className="2020-01"</span>
+                li<span>DATE = "2020-01"</span>
                 <FontAwesomeIcon icon={["fas", "angle-right"]} />
               </div>
               <div className="main">
@@ -160,7 +160,7 @@ class MyStudy extends Component {
             <div className="one-history">
               <div className="start-list-tag">
                 <FontAwesomeIcon icon={["fas", "angle-left"]} />
-                li<span>className="2020-02"</span>
+                li<span>DATE = "2020-02"</span>
                 <FontAwesomeIcon icon={["fas", "angle-right"]} />
               </div>
               <div className="main">
