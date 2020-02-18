@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../static/sass/myinfo.scss";
-
+import face from "../static/image/face.JPG";
 class MyInfo extends Component {
   render() {
     return (
@@ -12,7 +12,7 @@ class MyInfo extends Component {
         </div>
         <div className="info">
           <div className="face-image">
-            <FontAwesomeIcon icon={["fas", "user-circle"]} />
+            <img src={face} alt="my-face" />
           </div>
           <div className="about">
             <div className="name">
