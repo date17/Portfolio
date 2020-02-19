@@ -1,19 +1,65 @@
+@import "./global/width";
+
 // header
 header {
   padding: 70px 0;
   border-bottom: 2px dashed gray;
   .title {
-    .title-en {
-      color: yellow;
-      font-size: 4rem;
-      font-weight: bold;
-      text-align: center;
+    @include mini-mobile {
+      .title-en {
+        color: yellow;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+      }
+      .title-ja {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 0.8rem;
+        color: yellow;
+      }
     }
-    .title-ja {
-      margin: 10px 0;
-      text-align: center;
-      font-size: 1.5rem;
-      color: yellow;
+    @include mobile {
+      .title-en {
+        color: yellow;
+        font-size: 2.2rem;
+        font-weight: bold;
+        text-align: center;
+      }
+      .title-ja {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 1rem;
+        color: yellow;
+      }
+    }
+    @include tablet {
+      .title-en {
+        color: yellow;
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+      }
+      .title-ja {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 1.2rem;
+        color: yellow;
+      }
+    }
+    @include laptop {
+      .title-en {
+        color: yellow;
+        font-size: 4rem;
+        font-weight: bold;
+        text-align: center;
+      }
+      .title-ja {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 1.5rem;
+        color: yellow;
+      }
     }
   }
 }

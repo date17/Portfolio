@@ -1,175 +1,728 @@
+@import "./global/width";
+
 .mywork {
   padding: 30px 0;
   .page-title {
     padding: 20px 0;
     text-align: center;
     color: yellow;
-    .en {
-      font-size: 3rem;
-      font-weight: bold;
-    }
-    .ja {
-      margin: 5px 0;
-      font-size: 1rem;
-    }
-  }
-  .slide {
-    margin: 20px 15%;
-    width: 70%;
-    display: flex;
-    font-size: 20pt;
-    font-weight: bold;
-    color: rgb(65, 223, 223);
-    .back {
-      width: 10%;
-      text-align: center;
-      margin: 0 0 0 20%;
-      &:hover {
-        opacity: 0.7;
-        transform: scale(1.5); /*画像の拡大率*/
-        transition-duration: 0.3s; /*変化に掛かる時間*/
-      }
-    }
-    .slide-now {
-      width: 50%;
-      margin: 0 10%;
-      text-align: center;
-    }
-    .next {
-      width: 10%;
-      text-align: center;
-      margin: 0 20% 0 0;
-      &:hover {
-        opacity: 0.7;
-        transform: scale(1.5); /*画像の拡大率*/
-        transition-duration: 0.3s; /*変化に掛かる時間*/
-      }
-    }
-  }
-  .works {
-    width: 70%;
-    margin: 40px 15%;
-    // border: 1px solid gray;
-    box-sizing: border-box;
-    .desktop {
-      width: 100%;
-      margin: 0 0;
-      .desktop-icon {
-        width: 100%;
-        height: 700px;
-        padding: 25px 0;
-      }
-    }
-    .work-img {
-      width: 100%;
-      margin: 0 0;
-      .work-img-icon {
-        width: 95%;
-        height: 470px;
-        padding: 0;
-        margin: 0 2.5%;
-        position: relative;
-        bottom: 710px;
-        border-radius: 20px;
-      }
-    }
-    .experience {
-      margin: 30px 5%;
-      width: 90%;
-      border: 1px solid gray;
-      position: relative;
-      bottom: 470px;
-      .experience-title {
+    @include mini-mobile {
+      .en {
+        color: yellow;
         font-size: 2rem;
-        color: rgb(233, 163, 84);
-        padding: 0 0 0 1rem;
-        margin: 1rem 0;
+        font-weight: bold;
+        text-align: center;
       }
-      .title {
-        text-align: left;
-        margin: 0 0 0.5rem;
-        padding: 0 2rem 0 4rem;
-        .start-tag {
-          color: rgb(65, 223, 223);
-          font-size: 1.5rem;
-        }
-        .main {
-          margin: 0.3rem 0;
-          color: #fff;
-          font-size: 1.5rem;
-          padding: 0 2rem 0 4rem;
-          font-weight: bold;
-        }
-        .end-tag {
-          color: rgb(65, 223, 223);
-          font-size: 1.5rem;
+      .ja {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 0.8rem;
+        color: yellow;
+      }
+    }
+    @include mobile {
+      .en {
+        color: yellow;
+        font-size: 2.2rem;
+        font-weight: bold;
+        text-align: center;
+      }
+      .ja {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 1rem;
+        color: yellow;
+      }
+    }
+    @include tablet {
+      .en {
+        color: yellow;
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+      }
+      .ja {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 1.2rem;
+        color: yellow;
+      }
+    }
+    @include laptop {
+      .en {
+        color: yellow;
+        font-size: 4rem;
+        font-weight: bold;
+        text-align: center;
+      }
+      .ja {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 1.5rem;
+        color: yellow;
+      }
+    }
+  }
+  @include mini-mobile {
+    .slide {
+      margin: 20px 10%;
+      width: 80%;
+      display: flex;
+      font-size: 1rem;
+      font-weight: bold;
+      color: rgb(65, 223, 223);
+      .back {
+        width: 10%;
+        text-align: center;
+        margin: 0 0 0 20%;
+        &:hover {
+          opacity: 0.7;
+          transform: scale(1.5); /*画像の拡大率*/
+          transition-duration: 0.3s; /*変化に掛かる時間*/
         }
       }
-      .over-view {
-        text-align: left;
-        margin: 0 0 0.5rem;
-        padding: 0 0 0 4rem;
-        .start-tag {
-          color: rgb(65, 223, 223);
-          font-size: 1.5rem;
-        }
-        .main {
-          margin: 0.3rem 0;
-          color: #fff;
-          font-size: 1.5rem;
-          padding: 0 2rem 0 4rem;
-          font-weight: bold;
-        }
-        .end-tag {
-          color: rgb(65, 223, 223);
-          font-size: 1.5rem;
+      .slide-now {
+        width: 50%;
+        margin: 0 10%;
+        text-align: center;
+      }
+      .next {
+        width: 10%;
+        text-align: center;
+        margin: 0 20% 0 0;
+        &:hover {
+          opacity: 0.7;
+          transform: scale(1.5); /*画像の拡大率*/
+          transition-duration: 0.3s; /*変化に掛かる時間*/
         }
       }
-      .language {
-        text-align: left;
-        margin: 0 0 0.5rem;
-        padding: 0 2rem 0 4rem;
-        .start-tag {
-          color: rgb(65, 223, 223);
-          font-size: 1.5rem;
-        }
-        .main {
-          margin: 0.3rem 0;
-          color: #fff;
-          font-size: 1.5rem;
-          padding: 0 2rem 0 4rem;
-          font-weight: bold;
-        }
-        .end-tag {
-          color: rgb(65, 223, 223);
-          font-size: 1.5rem;
+    }
+    .works {
+      width: 90%;
+      margin: 40px 5%;
+      // border: 1px solid gray;
+      box-sizing: border-box;
+      .desktop {
+        width: 100%;
+        margin: 0 0;
+        display: none;
+        .desktop-icon {
+          width: 100%;
+          height: 700px;
+          padding: 25px 0;
+          display: none;
         }
       }
-      .url {
-        text-align: left;
-        margin: 0 0 1.5rem;
-        padding: 0 2rem 0 4rem;
-        .start-tag {
-          color: rgb(65, 223, 223);
-          font-size: 1.5rem;
+      .work-img {
+        width: 100%;
+        margin: 0 0;
+        display: none;
+        .work-img-icon {
+          width: 95%;
+          height: 470px;
+          padding: 0;
+          margin: 0 2.5%;
+          position: relative;
+          bottom: 710px;
+          border-radius: 20px;
+          display: none;
         }
-        .main {
-          margin: 0.3rem 0;
-          color: #fff;
-          font-size: 1.5rem;
-          padding: 0 2rem 0 4rem;
-          font-weight: bold;
-          a {
-            text-decoration: none;
+      }
+      .experience {
+        margin: 30px 5%;
+        width: 90%;
+        border: 1px solid gray;
+        .experience-title {
+          font-size: 0.7rem;
+          color: rgb(233, 163, 84);
+          padding: 0 0 0 0.5rem;
+          margin: 1rem 0;
+        }
+        .title {
+          text-align: left;
+          margin: 0 0 0.5rem;
+          padding: 0 0.5rem 0 1.5rem;
+          .start-tag {
+            color: rgb(65, 223, 223);
+            font-size: 0.7rem;
+          }
+          .main {
+            margin: 0.3rem 0;
             color: #fff;
-            &:hover {
-              color: rgb(230, 170, 115);
-            }
+            font-size: 0.7rem;
+            padding: 0 0.5rem 0 1.5rem;
+            font-weight: bold;
+          }
+          .end-tag {
+            color: rgb(65, 223, 223);
+            font-size: 0.7rem;
           }
         }
-        .end-tag {
-          color: rgb(65, 223, 223);
+        .over-view {
+          text-align: left;
+          margin: 0 0 0.5rem;
+          padding: 0 0 0 1.5rem;
+          .start-tag {
+            color: rgb(65, 223, 223);
+            font-size: 0.7rem;
+          }
+          .main {
+            margin: 0.3rem 0;
+            color: #fff;
+            font-size: 0.7rem;
+            padding: 0 0.5rem 0 1.5rem;
+            font-weight: bold;
+          }
+          .end-tag {
+            color: rgb(65, 223, 223);
+            font-size: 0.7rem;
+          }
+        }
+        .language {
+          text-align: left;
+          margin: 0 0 0.5rem;
+          padding: 0 0.5rem 0 1.5rem;
+          .start-tag {
+            color: rgb(65, 223, 223);
+            font-size: 0.7rem;
+          }
+          .main {
+            margin: 0.3rem 0;
+            color: #fff;
+            font-size: 0.7rem;
+            padding: 0 0.5rem 0 1.5rem;
+            font-weight: bold;
+          }
+          .end-tag {
+            color: rgb(65, 223, 223);
+            font-size: 0.7rem;
+          }
+        }
+        .url {
+          text-align: left;
+          margin: 0 0 1.5rem;
+          padding: 0 0.5rem 0 1.5rem;
+          .start-tag {
+            color: rgb(65, 223, 223);
+            font-size: 0.7rem;
+          }
+          .main {
+            margin: 0.3rem 0;
+            color: #fff;
+            font-size: 0.7rem;
+            padding: 0 0.5rem 0 1.5rem;
+            font-weight: bold;
+            a {
+              text-decoration: none;
+              color: #fff;
+              &:hover {
+                color: rgb(230, 170, 115);
+              }
+            }
+          }
+          .end-tag {
+            color: rgb(65, 223, 223);
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+  }
+  @include mobile {
+    .slide {
+      margin: 20px 10%;
+      width: 80%;
+      display: flex;
+      font-size: 16pt;
+      font-weight: bold;
+      color: rgb(65, 223, 223);
+      .back {
+        width: 10%;
+        text-align: center;
+        margin: 0 0 0 20%;
+        &:hover {
+          opacity: 0.7;
+          transform: scale(1.5); /*画像の拡大率*/
+          transition-duration: 0.3s; /*変化に掛かる時間*/
+        }
+      }
+      .slide-now {
+        width: 50%;
+        margin: 0 10%;
+        text-align: center;
+      }
+      .next {
+        width: 10%;
+        text-align: center;
+        margin: 0 20% 0 0;
+        &:hover {
+          opacity: 0.7;
+          transform: scale(1.5); /*画像の拡大率*/
+          transition-duration: 0.3s; /*変化に掛かる時間*/
+        }
+      }
+    }
+    .works {
+      width: 90%;
+      margin: 40px 5%;
+      // border: 1px solid gray;
+      box-sizing: border-box;
+      .desktop {
+        width: 100%;
+        margin: 0 0;
+        display: none;
+        .desktop-icon {
+          width: 100%;
+          height: 700px;
+          padding: 25px 0;
+          display: none;
+        }
+      }
+      .work-img {
+        width: 100%;
+        margin: 0 0;
+        display: none;
+        .work-img-icon {
+          width: 95%;
+          height: 470px;
+          padding: 0;
+          margin: 0 2.5%;
+          position: relative;
+          bottom: 710px;
+          border-radius: 20px;
+          display: none;
+        }
+      }
+      .experience {
+        margin: 30px 5%;
+        width: 90%;
+        border: 1px solid gray;
+        .experience-title {
+          font-size: 1rem;
+          color: rgb(233, 163, 84);
+          padding: 0 0 0 0.5rem;
+          margin: 1rem 0;
+        }
+        .title {
+          text-align: left;
+          margin: 0 0 0.5rem;
+          padding: 0 0.5rem 0 1.5rem;
+          .start-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1rem;
+          }
+          .main {
+            margin: 0.3rem 0;
+            color: #fff;
+            font-size: 1rem;
+            padding: 0 0.5rem 0 1.5rem;
+            font-weight: bold;
+          }
+          .end-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1rem;
+          }
+        }
+        .over-view {
+          text-align: left;
+          margin: 0 0 0.5rem;
+          padding: 0 0 0 1.5rem;
+          .start-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1rem;
+          }
+          .main {
+            margin: 0.3rem 0;
+            color: #fff;
+            font-size: 1rem;
+            padding: 0 0.5rem 0 1.5rem;
+            font-weight: bold;
+          }
+          .end-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1rem;
+          }
+        }
+        .language {
+          text-align: left;
+          margin: 0 0 0.5rem;
+          padding: 0 0.5rem 0 1.5rem;
+          .start-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1rem;
+          }
+          .main {
+            margin: 0.3rem 0;
+            color: #fff;
+            font-size: 1rem;
+            padding: 0 0.5rem 0 1.5rem;
+            font-weight: bold;
+          }
+          .end-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1rem;
+          }
+        }
+        .url {
+          text-align: left;
+          margin: 0 0 1.5rem;
+          padding: 0 0.5rem 0 1.5rem;
+          .start-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1rem;
+          }
+          .main {
+            margin: 0.3rem 0;
+            color: #fff;
+            font-size: 1rem;
+            padding: 0 0.5rem 0 1.5rem;
+            font-weight: bold;
+            a {
+              text-decoration: none;
+              color: #fff;
+              &:hover {
+                color: rgb(230, 170, 115);
+              }
+            }
+          }
+          .end-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  @include tablet {
+    .slide {
+      margin: 20px 15%;
+      width: 70%;
+      display: flex;
+      font-size: 20pt;
+      font-weight: bold;
+      color: rgb(65, 223, 223);
+      .back {
+        width: 10%;
+        text-align: center;
+        margin: 0 0 0 20%;
+        &:hover {
+          opacity: 0.7;
+          transform: scale(1.5); /*画像の拡大率*/
+          transition-duration: 0.3s; /*変化に掛かる時間*/
+        }
+      }
+      .slide-now {
+        width: 50%;
+        margin: 0 10%;
+        text-align: center;
+      }
+      .next {
+        width: 10%;
+        text-align: center;
+        margin: 0 20% 0 0;
+        &:hover {
+          opacity: 0.7;
+          transform: scale(1.5); /*画像の拡大率*/
+          transition-duration: 0.3s; /*変化に掛かる時間*/
+        }
+      }
+    }
+    .works {
+      width: 70%;
+      margin: 40px 15%;
+      // border: 1px solid gray;
+      box-sizing: border-box;
+      .desktop {
+        width: 100%;
+        margin: 0 0;
+        display: block;
+        .desktop-icon {
+          width: 100%;
+          height: 500px;
+          padding: 25px 0;
+          display: block;
+        }
+      }
+      .work-img {
+        width: 100%;
+        margin: 0 0;
+        display: block;
+        .work-img-icon {
+          width: 95%;
+          height: 340px;
+          padding: 0;
+          margin: 0 2.5%;
+          position: relative;
+          bottom: 515px;
+          border-radius: 20px;
+          display: block;
+        }
+      }
+      .experience {
+        margin: 30px 5%;
+        width: 90%;
+        border: 1px solid gray;
+        position: relative;
+        bottom: 270px;
+        .experience-title {
           font-size: 1.5rem;
+          color: rgb(233, 163, 84);
+          padding: 0 0 0 0.8rem;
+          margin: 1rem 0;
+        }
+        .title {
+          text-align: left;
+          margin: 0 0 0.5rem;
+          padding: 0 2rem 0 2rem;
+          .start-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.2rem;
+          }
+          .main {
+            margin: 0.3rem 0;
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 0 2rem 0 2rem;
+            font-weight: bold;
+          }
+          .end-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.2rem;
+          }
+        }
+        .over-view {
+          text-align: left;
+          margin: 0 0 0.5rem;
+          padding: 0 0 0 2rem;
+          .start-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.2rem;
+          }
+          .main {
+            margin: 0.3rem 0;
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 0 2rem 0 2rem;
+            font-weight: bold;
+          }
+          .end-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.2rem;
+          }
+        }
+        .language {
+          text-align: left;
+          margin: 0 0 0.5rem;
+          padding: 0 2rem 0 2rem;
+          .start-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.2rem;
+          }
+          .main {
+            margin: 0.3rem 0;
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 0 2rem 0 2rem;
+            font-weight: bold;
+          }
+          .end-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.2rem;
+          }
+        }
+        .url {
+          text-align: left;
+          margin: 0 0 1.5rem;
+          padding: 0 2rem 0 2rem;
+          .start-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.2rem;
+          }
+          .main {
+            margin: 0.3rem 0;
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 0 2rem 0 2rem;
+            font-weight: bold;
+            a {
+              text-decoration: none;
+              color: #fff;
+              &:hover {
+                color: rgb(230, 170, 115);
+              }
+            }
+          }
+          .end-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+  @include laptop {
+    .slide {
+      margin: 20px 15%;
+      width: 70%;
+      display: flex;
+      font-size: 20pt;
+      font-weight: bold;
+      color: rgb(65, 223, 223);
+      .back {
+        width: 10%;
+        text-align: center;
+        margin: 0 0 0 20%;
+        &:hover {
+          opacity: 0.7;
+          transform: scale(1.5); /*画像の拡大率*/
+          transition-duration: 0.3s; /*変化に掛かる時間*/
+        }
+      }
+      .slide-now {
+        width: 50%;
+        margin: 0 10%;
+        text-align: center;
+      }
+      .next {
+        width: 10%;
+        text-align: center;
+        margin: 0 20% 0 0;
+        &:hover {
+          opacity: 0.7;
+          transform: scale(1.5); /*画像の拡大率*/
+          transition-duration: 0.3s; /*変化に掛かる時間*/
+        }
+      }
+    }
+    .works {
+      width: 70%;
+      margin: 40px 15%;
+      // border: 1px solid gray;
+      box-sizing: border-box;
+      .desktop {
+        width: 100%;
+        margin: 0 0;
+        display: block;
+        .desktop-icon {
+          width: 100%;
+          height: 700px;
+          padding: 25px 0;
+          display: block;
+        }
+      }
+      .work-img {
+        width: 100%;
+        margin: 0 0;
+        display: block;
+        .work-img-icon {
+          width: 95%;
+          height: 470px;
+          padding: 0;
+          margin: 0 2.5%;
+          position: relative;
+          bottom: 710px;
+          border-radius: 20px;
+          display: block;
+        }
+      }
+      .experience {
+        margin: 30px 5%;
+        width: 90%;
+        border: 1px solid gray;
+        position: relative;
+        bottom: 470px;
+        .experience-title {
+          font-size: 2rem;
+          color: rgb(233, 163, 84);
+          padding: 0 0 0 1rem;
+          margin: 1rem 0;
+        }
+        .title {
+          text-align: left;
+          margin: 0 0 0.5rem;
+          padding: 0 2rem 0 4rem;
+          .start-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.5rem;
+          }
+          .main {
+            margin: 0.3rem 0;
+            color: #fff;
+            font-size: 1.5rem;
+            padding: 0 2rem 0 4rem;
+            font-weight: bold;
+          }
+          .end-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.5rem;
+          }
+        }
+        .over-view {
+          text-align: left;
+          margin: 0 0 0.5rem;
+          padding: 0 0 0 4rem;
+          .start-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.5rem;
+          }
+          .main {
+            margin: 0.3rem 0;
+            color: #fff;
+            font-size: 1.5rem;
+            padding: 0 2rem 0 4rem;
+            font-weight: bold;
+          }
+          .end-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.5rem;
+          }
+        }
+        .language {
+          text-align: left;
+          margin: 0 0 0.5rem;
+          padding: 0 2rem 0 4rem;
+          .start-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.5rem;
+          }
+          .main {
+            margin: 0.3rem 0;
+            color: #fff;
+            font-size: 1.5rem;
+            padding: 0 2rem 0 4rem;
+            font-weight: bold;
+          }
+          .end-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.5rem;
+          }
+        }
+        .url {
+          text-align: left;
+          margin: 0 0 1.5rem;
+          padding: 0 2rem 0 4rem;
+          .start-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.5rem;
+          }
+          .main {
+            margin: 0.3rem 0;
+            color: #fff;
+            font-size: 1.5rem;
+            padding: 0 2rem 0 4rem;
+            font-weight: bold;
+            a {
+              text-decoration: none;
+              color: #fff;
+              &:hover {
+                color: rgb(230, 170, 115);
+              }
+            }
+          }
+          .end-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.5rem;
+          }
         }
       }
     }

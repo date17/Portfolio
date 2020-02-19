@@ -1,64 +1,248 @@
+@import "./global/width";
+
 .mystudy {
   padding: 30px 0;
   .title {
     padding: 20px 0;
     text-align: center;
     color: yellow;
-    .en {
-      font-size: 3rem;
-      font-weight: bold;
+    @include mini-mobile {
+      .en {
+        color: yellow;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+      }
+      .ja {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 0.8rem;
+        color: yellow;
+      }
     }
-    .ja {
-      margin: 5px 0;
-      font-size: 1rem;
+    @include mobile {
+      .en {
+        color: yellow;
+        font-size: 2.2rem;
+        font-weight: bold;
+        text-align: center;
+      }
+      .ja {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 1rem;
+        color: yellow;
+      }
+    }
+    @include tablet {
+      .en {
+        color: yellow;
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+      }
+      .ja {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 1.2rem;
+        color: yellow;
+      }
+    }
+    @include laptop {
+      .en {
+        color: yellow;
+        font-size: 4rem;
+        font-weight: bold;
+        text-align: center;
+      }
+      .ja {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 1.5rem;
+        color: yellow;
+      }
     }
   }
   .study-history {
     width: 70%;
     margin: 40px 15%;
-    padding: 40px 40px;
     border: 1px solid gray;
     box-sizing: border-box;
-    .start-tag {
-      color: rgb(65, 223, 223);
-      font-size: 1.5rem;
-      span {
-        color: rgb(233, 163, 84);
-        padding: 0 0 0 1rem;
+    @include mini-mobile {
+      padding: 20px 10px;
+      .start-tag {
+        color: rgb(65, 223, 223);
+        font-size: 0.8rem;
+        span {
+          color: rgb(233, 163, 84);
+          padding: 0 0 0 0.5rem;
+        }
       }
-    }
-    .history-list {
-      margin: 1rem 0;
-      padding: 0 0 0 3rem;
-      .one-history {
+      .history-list {
         margin: 1rem 0;
-        .start-list-tag {
-          color: rgb(65, 223, 223);
-          font-size: 1.5rem;
-          span {
-            color: rgb(233, 163, 84);
-            padding: 0 0 0 1rem;
+        padding: 0 0 0 1rem;
+        .one-history {
+          margin: 1rem 0;
+          .start-list-tag {
+            color: rgb(65, 223, 223);
+            font-size: 0.8rem;
+            span {
+              color: rgb(233, 163, 84);
+              padding: 0 0 0 0.8rem;
+            }
           }
-        }
-        .main {
-          padding: 0 0 0 3rem;
-          margin: 0.5rem 0;
-          font-size: 1.5rem;
-          font-weight: bold;
-          color: #fff;
-        }
-        .end-list-tag {
-          color: rgb(65, 223, 223);
-          font-size: 1.5rem;
-          span {
+          .main {
             padding: 0 0 0 1rem;
+            margin: 0.5rem 0;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: #fff;
+          }
+          .end-list-tag {
+            color: rgb(65, 223, 223);
+            font-size: 0.8rem;
+            span {
+              padding: 0 0 0 0.5rem;
+            }
           }
         }
       }
+      .end-tag {
+        color: rgb(65, 223, 223);
+        font-size: 0.8rem;
+      }
     }
-    .end-tag {
-      color: rgb(65, 223, 223);
-      font-size: 1.5rem;
+    @include mobile {
+      padding: 40px 20px;
+      .start-tag {
+        color: rgb(65, 223, 223);
+        font-size: 1rem;
+        span {
+          color: rgb(233, 163, 84);
+          padding: 0 0 0 0.7rem;
+        }
+      }
+      .history-list {
+        margin: 1rem 0;
+        padding: 0 0 0 1.5rem;
+        .one-history {
+          margin: 1rem 0;
+          .start-list-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1rem;
+            span {
+              color: rgb(233, 163, 84);
+              padding: 0 0 0 1rem;
+            }
+          }
+          .main {
+            padding: 0 0 0 1.5rem;
+            margin: 0.5rem 0;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #fff;
+          }
+          .end-list-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1rem;
+            span {
+              padding: 0 0 0 1rem;
+            }
+          }
+        }
+      }
+      .end-tag {
+        color: rgb(65, 223, 223);
+        font-size: 1.3rem;
+      }
+    }
+    @include tablet {
+      padding: 40px 40px;
+      .start-tag {
+        color: rgb(65, 223, 223);
+        font-size: 1.3rem;
+        span {
+          color: rgb(233, 163, 84);
+          padding: 0 0 0 1rem;
+        }
+      }
+      .history-list {
+        margin: 1rem 0;
+        padding: 0 0 0 3rem;
+        .one-history {
+          margin: 1rem 0;
+          .start-list-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.3rem;
+            span {
+              color: rgb(233, 163, 84);
+              padding: 0 0 0 1rem;
+            }
+          }
+          .main {
+            padding: 0 0 0 2.5rem;
+            margin: 0.5rem 0;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #fff;
+          }
+          .end-list-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.3rem;
+            span {
+              padding: 0 0 0 1rem;
+            }
+          }
+        }
+      }
+      .end-tag {
+        color: rgb(65, 223, 223);
+        font-size: 1.3rem;
+      }
+    }
+    @include laptop {
+      padding: 40px 40px;
+      .start-tag {
+        color: rgb(65, 223, 223);
+        font-size: 1.5rem;
+        span {
+          color: rgb(233, 163, 84);
+          padding: 0 0 0 1rem;
+        }
+      }
+      .history-list {
+        margin: 1rem 0;
+        padding: 0 0 0 3rem;
+        .one-history {
+          margin: 1rem 0;
+          .start-list-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.5rem;
+            span {
+              color: rgb(233, 163, 84);
+              padding: 0 0 0 1rem;
+            }
+          }
+          .main {
+            padding: 0 0 0 3rem;
+            margin: 0.5rem 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+          }
+          .end-list-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.5rem;
+            span {
+              padding: 0 0 0 1rem;
+            }
+          }
+        }
+      }
+      .end-tag {
+        color: rgb(65, 223, 223);
+        font-size: 1.5rem;
+      }
     }
   }
 }

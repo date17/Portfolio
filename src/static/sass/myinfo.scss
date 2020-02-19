@@ -1,113 +1,570 @@
+@import "./global/width";
+
 .introduction {
   padding: 30px 0;
   .title {
     padding: 20px 0;
     text-align: center;
     color: yellow;
-    .en {
-      font-size: 3rem;
-      font-weight: bold;
+    @include mini-mobile {
+      .en {
+        color: yellow;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+      }
+      .ja {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 0.8rem;
+        color: yellow;
+      }
     }
-    .ja {
-      margin: 5px 0;
-      font-size: 1rem;
+    @include mobile {
+      .en {
+        color: yellow;
+        font-size: 2.2rem;
+        font-weight: bold;
+        text-align: center;
+      }
+      .ja {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 1rem;
+        color: yellow;
+      }
+    }
+    @include tablet {
+      .en {
+        color: yellow;
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+      }
+      .ja {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 1.2rem;
+        color: yellow;
+      }
+    }
+    @include laptop {
+      .en {
+        color: yellow;
+        font-size: 4rem;
+        font-weight: bold;
+        text-align: center;
+      }
+      .ja {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 1.5rem;
+        color: yellow;
+      }
     }
   }
   .info {
-    width: 70%;
-    margin: 40px 15%;
-    border: 1px solid gray;
-    box-sizing: border-box;
-    display: flex;
-    .face-image {
-      width: 40%;
-      margin: 0 5%;
-      text-align: center;
-      padding: 83px 0;
-      img {
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
+    @include mini-mobile {
+      width: 80%;
+      margin: 40px 10%;
+      border: 1px solid gray;
+      box-sizing: border-box;
+      display: flex;
+      .face-image {
+        width: 40%;
+        height: 230px;
+        margin: 0 5%;
+        text-align: center;
+        padding: 83px 0;
+        display: none;
+        img {
+          width: 230px;
+          height: 230px;
+          border-radius: 50%;
 
-        &:hover {
-          transform: scale(1.1);
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+      .about {
+        width: 90%;
+        margin: 0 5%;
+        // padding: 40px 0;
+        .name {
+          padding: 0.5rem 0;
+          .start-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.3rem;
+          }
+          .main {
+            margin: 0.3rem 0;
+            color: #fff;
+            font-size: 1rem;
+            padding: 0 0 0 2.5rem;
+            font-weight: bold;
+          }
+          .end-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.3rem;
+          }
+        }
+        .birth {
+          padding: 0.5rem 0;
+          .start-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.3rem;
+          }
+          .main {
+            margin: 0.3rem 0;
+            color: #fff;
+            font-size: 1rem;
+            padding: 0 0 0 2.5rem;
+            font-weight: bold;
+          }
+          .end-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.3rem;
+          }
+        }
+        .university {
+          padding: 0.5rem 0;
+          .start-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.3rem;
+          }
+          .main {
+            margin: 0.3rem 0;
+            color: #fff;
+            font-size: 1rem;
+            padding: 0 0 0 2.5rem;
+            font-weight: bold;
+          }
+          .end-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.3rem;
+          }
+        }
+        .hobby {
+          padding: 0.5rem 0;
+          .start-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.3rem;
+          }
+          .main {
+            margin: 0.3rem 0;
+            color: #fff;
+            font-size: 1rem;
+            padding: 0 0 0 2.5rem;
+            font-weight: bold;
+          }
+          .end-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.3rem;
+          }
         }
       }
     }
-    .about {
-      width: 40%;
-      margin: 0 10% 0 0;
-      // padding: 40px 0;
-      .name {
-        padding: 0.5rem 0;
-        .start-tag {
-          color: rgb(65, 223, 223);
-          font-size: 1.5rem;
-        }
-        .main {
-          margin: 0.3rem 0;
-          color: #fff;
-          font-size: 1.5rem;
-          padding: 0 0 0 4rem;
-          font-weight: bold;
-        }
-        .end-tag {
-          color: rgb(65, 223, 223);
-          font-size: 1.5rem;
-        }
-      }
-      .birth {
-        padding: 0.5rem 0;
-        .start-tag {
-          color: rgb(65, 223, 223);
-          font-size: 1.5rem;
-        }
-        .main {
-          margin: 0.3rem 0;
-          color: #fff;
-          font-size: 1.5rem;
-          padding: 0 0 0 4rem;
-          font-weight: bold;
-        }
-        .end-tag {
-          color: rgb(65, 223, 223);
-          font-size: 1.5rem;
+    @include mobile {
+      width: 80%;
+      margin: 40px 10%;
+      border: 1px solid gray;
+      box-sizing: border-box;
+      // display: flex;
+      .face-image {
+        width: 40%;
+        height: 230px;
+        margin: 0 5%;
+        text-align: center;
+        padding: 83px 0;
+        display: none;
+        img {
+          width: 230px;
+          height: 230px;
+          border-radius: 50%;
+
+          &:hover {
+            transform: scale(1.1);
+          }
         }
       }
-      .university {
-        padding: 0.5rem 0;
-        .start-tag {
-          color: rgb(65, 223, 223);
-          font-size: 1.5rem;
+      .about {
+        width: 90%;
+        margin: 0 5%;
+        // padding: 40px 0;
+        .name {
+          padding: 0.5rem 0;
+          .start-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.3rem;
+          }
+          .main {
+            margin: 0.3rem 0;
+            color: #fff;
+            font-size: 1rem;
+            padding: 0 0 0 4rem;
+            font-weight: bold;
+          }
+          .end-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.3rem;
+          }
         }
-        .main {
-          margin: 0.3rem 0;
-          color: #fff;
-          font-size: 1.5rem;
-          padding: 0 0 0 4rem;
-          font-weight: bold;
+        .birth {
+          padding: 0.5rem 0;
+          .start-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.3rem;
+          }
+          .main {
+            margin: 0.3rem 0;
+            color: #fff;
+            font-size: 1rem;
+            padding: 0 0 0 4rem;
+            font-weight: bold;
+          }
+          .end-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.3rem;
+          }
         }
-        .end-tag {
-          color: rgb(65, 223, 223);
-          font-size: 1.5rem;
+        .university {
+          padding: 0.5rem 0;
+          .start-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.3rem;
+          }
+          .main {
+            margin: 0.3rem 0;
+            color: #fff;
+            font-size: 1rem;
+            padding: 0 0 0 4rem;
+            font-weight: bold;
+          }
+          .end-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.3rem;
+          }
+        }
+        .hobby {
+          padding: 0.5rem 0;
+          .start-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.3rem;
+          }
+          .main {
+            margin: 0.3rem 0;
+            color: #fff;
+            font-size: 1rem;
+            padding: 0 0 0 4rem;
+            font-weight: bold;
+          }
+          .end-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.3rem;
+          }
         }
       }
-      .hobby {
-        padding: 0.5rem 0;
-        .start-tag {
-          color: rgb(65, 223, 223);
-          font-size: 1.5rem;
+    }
+    @include tablet {
+      width: 80%;
+      margin: 40px 10%;
+      border: 1px solid gray;
+      box-sizing: border-box;
+      display: flex;
+      .face-image {
+        width: 40%;
+        height: 230px;
+        margin: 0 5%;
+        text-align: center;
+        padding: 83px 0;
+        display: block;
+        img {
+          width: 230px;
+          height: 230px;
+          border-radius: 50%;
+
+          &:hover {
+            transform: scale(1.1);
+          }
         }
-        .main {
-          margin: 0.3rem 0;
-          color: #fff;
-          font-size: 1.5rem;
-          padding: 0 0 0 4rem;
-          font-weight: bold;
+      }
+      .about {
+        width: 40%;
+        margin: 0 10% 0 0;
+        // padding: 40px 0;
+        .name {
+          padding: 0.5rem 0;
+          .start-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.3rem;
+          }
+          .main {
+            margin: 0.3rem 0;
+            color: #fff;
+            font-size: 1rem;
+            padding: 0 0 0 4rem;
+            font-weight: bold;
+          }
+          .end-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.3rem;
+          }
         }
-        .end-tag {
-          color: rgb(65, 223, 223);
-          font-size: 1.5rem;
+        .birth {
+          padding: 0.5rem 0;
+          .start-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.3rem;
+          }
+          .main {
+            margin: 0.3rem 0;
+            color: #fff;
+            font-size: 1rem;
+            padding: 0 0 0 4rem;
+            font-weight: bold;
+          }
+          .end-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.3rem;
+          }
+        }
+        .university {
+          padding: 0.5rem 0;
+          .start-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.3rem;
+          }
+          .main {
+            margin: 0.3rem 0;
+            color: #fff;
+            font-size: 1rem;
+            padding: 0 0 0 4rem;
+            font-weight: bold;
+          }
+          .end-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.3rem;
+          }
+        }
+        .hobby {
+          padding: 0.5rem 0;
+          .start-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.3rem;
+          }
+          .main {
+            margin: 0.3rem 0;
+            color: #fff;
+            font-size: 1rem;
+            padding: 0 0 0 4rem;
+            font-weight: bold;
+          }
+          .end-tag {
+            color: rgb(65, 223, 223);
+            font-size: 1.3rem;
+          }
+        }
+      }
+      @include laptop {
+        width: 70%;
+        margin: 40px 15%;
+        border: 1px solid gray;
+        box-sizing: border-box;
+        display: flex;
+        .face-image {
+          width: 40%;
+          margin: 0 5%;
+          height: 250px;
+          text-align: center;
+          padding: 95.69px 0;
+          display: block;
+          img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+        .about {
+          width: 40%;
+          margin: 0 10% 0 0;
+          // padding: 40px 0;
+          .name {
+            padding: 0.5rem 0;
+            .start-tag {
+              color: rgb(65, 223, 223);
+              font-size: 1.5rem;
+            }
+            .main {
+              margin: 0.3rem 0;
+              color: #fff;
+              font-size: 1.2rem;
+              padding: 0 0 0 4rem;
+              font-weight: bold;
+            }
+            .end-tag {
+              color: rgb(65, 223, 223);
+              font-size: 1.5rem;
+            }
+          }
+          .birth {
+            padding: 0.5rem 0;
+            .start-tag {
+              color: rgb(65, 223, 223);
+              font-size: 1.5rem;
+            }
+            .main {
+              margin: 0.3rem 0;
+              color: #fff;
+              font-size: 1.2rem;
+              padding: 0 0 0 4rem;
+              font-weight: bold;
+            }
+            .end-tag {
+              color: rgb(65, 223, 223);
+              font-size: 1.5rem;
+            }
+          }
+          .university {
+            padding: 0.5rem 0;
+            .start-tag {
+              color: rgb(65, 223, 223);
+              font-size: 1.5rem;
+            }
+            .main {
+              margin: 0.3rem 0;
+              color: #fff;
+              font-size: 1.2rem;
+              padding: 0 0 0 4rem;
+              font-weight: bold;
+            }
+            .end-tag {
+              color: rgb(65, 223, 223);
+              font-size: 1.5rem;
+            }
+          }
+          .hobby {
+            padding: 0.5rem 0;
+            .start-tag {
+              color: rgb(65, 223, 223);
+              font-size: 1.5rem;
+            }
+            .main {
+              margin: 0.3rem 0;
+              color: #fff;
+              font-size: 1.2rem;
+              padding: 0 0 0 4rem;
+              font-weight: bold;
+            }
+            .end-tag {
+              color: rgb(65, 223, 223);
+              font-size: 1.5rem;
+            }
+          }
+        }
+        @include laptopL {
+          width: 70%;
+          margin: 40px 15%;
+          border: 1px solid gray;
+          box-sizing: border-box;
+          display: flex;
+          .face-image {
+            width: 40%;
+            margin: 0 5%;
+            text-align: center;
+            padding: 83px 0;
+            display: block;
+            img {
+              width: 300px;
+              height: 300px;
+              border-radius: 50%;
+
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+          }
+          .about {
+            width: 40%;
+            margin: 0 10% 0 0;
+            // padding: 40px 0;
+            .name {
+              padding: 0.5rem 0;
+              .start-tag {
+                color: rgb(65, 223, 223);
+                font-size: 1.5rem;
+              }
+              .main {
+                margin: 0.3rem 0;
+                color: #fff;
+                font-size: 1.5rem;
+                padding: 0 0 0 4rem;
+                font-weight: bold;
+              }
+              .end-tag {
+                color: rgb(65, 223, 223);
+                font-size: 1.5rem;
+              }
+            }
+            .birth {
+              padding: 0.5rem 0;
+              .start-tag {
+                color: rgb(65, 223, 223);
+                font-size: 1.5rem;
+              }
+              .main {
+                margin: 0.3rem 0;
+                color: #fff;
+                font-size: 1.5rem;
+                padding: 0 0 0 4rem;
+                font-weight: bold;
+              }
+              .end-tag {
+                color: rgb(65, 223, 223);
+                font-size: 1.5rem;
+              }
+            }
+            .university {
+              padding: 0.5rem 0;
+              .start-tag {
+                color: rgb(65, 223, 223);
+                font-size: 1.5rem;
+              }
+              .main {
+                margin: 0.3rem 0;
+                color: #fff;
+                font-size: 1.5rem;
+                padding: 0 0 0 4rem;
+                font-weight: bold;
+              }
+              .end-tag {
+                color: rgb(65, 223, 223);
+                font-size: 1.5rem;
+              }
+            }
+            .hobby {
+              padding: 0.5rem 0;
+              .start-tag {
+                color: rgb(65, 223, 223);
+                font-size: 1.5rem;
+              }
+              .main {
+                margin: 0.3rem 0;
+                color: #fff;
+                font-size: 1.5rem;
+                padding: 0 0 0 4rem;
+                font-weight: bold;
+              }
+              .end-tag {
+                color: rgb(65, 223, 223);
+                font-size: 1.5rem;
+              }
+            }
+          }
         }
       }
     }

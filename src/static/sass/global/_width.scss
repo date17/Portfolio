@@ -1,0 +1,36 @@
+//レスポンシブに対応するための変数を格納しておく
+$pc_l: "1440px";
+$pc: "1024px";
+$tablet: "768px";
+$mobile: "425px";
+$mini-mobile: "424px";
+
+@mixin laptopL {
+  @media screen and (min-width: $pc_l) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (min-width: $pc) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (min-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin mini-mobile {
+  @media screen and (max-width: $mini-mobile) {
+    @content;
+  }
+}
