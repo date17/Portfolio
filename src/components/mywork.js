@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../static/sass/mywork.scss";
-import pc from "../static/image/work/pc.png";
+import pc from "../static/image/work/laptop.png";
 import famimanage from "../static/image/work/famimanage.png";
 import image_processing from "../static/image/work/image_processing.png";
 
@@ -126,9 +126,6 @@ class MyWork extends Component {
           </div>
         </div>
         <div className="works">
-          <div className="desktop">
-            <img src={pc} alt="pc" className="desktop-icon" />
-          </div>
           <div className="work-img">
             <img
               src={this.state.src}

@@ -102,17 +102,6 @@
       margin: 40px 5%;
       // border: 1px solid gray;
       box-sizing: border-box;
-      .desktop {
-        width: 100%;
-        margin: 0 0;
-        display: none;
-        .desktop-icon {
-          width: 100%;
-          height: 700px;
-          padding: 25px 0;
-          display: none;
-        }
-      }
       .work-img {
         width: 100%;
         margin: 0 0;
@@ -122,8 +111,6 @@
           height: 470px;
           padding: 0;
           margin: 0 2.5%;
-          position: relative;
-          bottom: 710px;
           border-radius: 20px;
           display: none;
         }
@@ -267,17 +254,6 @@
       margin: 40px 5%;
       // border: 1px solid gray;
       box-sizing: border-box;
-      .desktop {
-        width: 100%;
-        margin: 0 0;
-        display: none;
-        .desktop-icon {
-          width: 100%;
-          height: 700px;
-          padding: 25px 0;
-          display: none;
-        }
-      }
       .work-img {
         width: 100%;
         margin: 0 0;
@@ -287,8 +263,6 @@
           height: 470px;
           padding: 0;
           margin: 0 2.5%;
-          position: relative;
-          bottom: 710px;
           border-radius: 20px;
           display: none;
         }
@@ -432,28 +406,15 @@
       margin: 40px 15%;
       // border: 1px solid gray;
       box-sizing: border-box;
-      .desktop {
-        width: 100%;
-        margin: 0 0;
-        display: block;
-        .desktop-icon {
-          width: 100%;
-          height: 500px;
-          padding: 25px 0;
-          display: block;
-        }
-      }
       .work-img {
-        width: 100%;
-        margin: 0 0;
+        width: 90%;
+        margin: 0 auto;
         display: block;
         .work-img-icon {
-          width: 95%;
-          height: 340px;
+          width: 100%;
+          height: auto;
           padding: 0;
-          margin: 0 2.5%;
-          position: relative;
-          bottom: 515px;
+          margin: 0;
           border-radius: 20px;
           display: block;
         }
@@ -462,8 +423,6 @@
         margin: 30px 5%;
         width: 90%;
         border: 1px solid gray;
-        position: relative;
-        bottom: 270px;
         .experience-title {
           font-size: 1.5rem;
           color: rgb(233, 163, 84);
@@ -599,28 +558,15 @@
       margin: 40px 15%;
       // border: 1px solid gray;
       box-sizing: border-box;
-      .desktop {
-        width: 100%;
-        margin: 0 0;
-        display: block;
-        .desktop-icon {
-          width: 100%;
-          height: 700px;
-          padding: 25px 0;
-          display: block;
-        }
-      }
       .work-img {
-        width: 100%;
-        margin: 0 0;
+        width: 90%;
+        margin: 0 auto;
         display: block;
         .work-img-icon {
-          width: 95%;
-          height: 470px;
+          width: 100%;
+          height: auto;
           padding: 0;
-          margin: 0 2.5%;
-          position: relative;
-          bottom: 710px;
+          margin: 0;
           border-radius: 20px;
           display: block;
         }
@@ -629,8 +575,6 @@
         margin: 30px 5%;
         width: 90%;
         border: 1px solid gray;
-        position: relative;
-        bottom: 470px;
         .experience-title {
           font-size: 2rem;
           color: rgb(233, 163, 84);
